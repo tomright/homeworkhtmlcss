@@ -1,6 +1,6 @@
 "use strict";
 
-const div = document.querySelector(".container");
+const div = document.querySelector(".containerJS");
 const redDiv = document.querySelector('.redMoveObj')
 
 const count = 26;

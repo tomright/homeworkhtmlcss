@@ -6,7 +6,7 @@ body {
   font-size: 100%;
   font: inherit;
 }
-.container {
+.containerJS {
   display: flex;
   align-items: center;
   align-content: space-between;
@@ -31,19 +31,6 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: bisque;
-}
-nav a:hover,
-nav a:active,
-nav a:link,
-nav a {
-  text-decoration: none;
-  color: black;
-}
-nav {
-  display: flex;
-  width: 700px;
-  justify-content: space-around;
 }
 .linkdiv {
   width: 100px;
