@@ -1,13 +1,13 @@
 "use strict";
 
-const div = document.querySelector(".containerJS");
+const divContainerJS = document.querySelector(".containerJS");
 const redDiv = document.querySelector('.redMoveObj')
 
 const count = 26;
 for (let i = 0; i < count; i++) {
   const moveDiv = document.createElement("div");
   moveDiv.classList.add("moveObject");
-  div.append(moveDiv);
+  divContainerJS.append(moveDiv);
 }
 const allMoveDiv = document.querySelectorAll('.moveObject');
 
@@ -26,4 +26,3 @@ let audio = new Audio();
 allMoveDiv.forEach(val => {
     val.addEventListener('click', playSoundNani);
 })
-redDiv.addEventListener('click', playSoundUmaeva);

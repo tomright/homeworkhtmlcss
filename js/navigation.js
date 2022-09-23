@@ -16,6 +16,7 @@ headerLink.forEach((val) => {
 // arrJS.forEach((val) => {
 //   const scripJS = document.createElement('script');
 //   scripJS.setAttribute('src', val);
+//   scripJS.async = false;
 //   body.append(scripJS);
 // });
 
@@ -74,15 +75,26 @@ divContainerXS.append(divCollapeNavBarCollape);
 nav.append(divContainerXS);
 header.append(nav);
 
-// navNameArray.forEach((value) => {
-//   const aLink = document.createElement("a");
-//   const linkDiv = document.createElement("div");
-//   linkDiv.classList.add("linkdiv");
-//   linkDiv.textContent = value[0];
-//   aLink.append(linkDiv);
-//   aLink.href = value[1];
-//   nav.append(aLink);
-//   console.log(aLink);
-// });
-// divNavbar.append(nav);
-// header.append(divNavbar);
+
+// Создаем основное окно для всего контента.
+const body = document.querySelector('body');
+const divManiContainer = document.querySelector('.maincontainer');
+const divContainer = document.createElement('div');
+divContainer.classList.add('container');
+const divRow = document.createElement('div');
+divRow.classList.add('row');
+divRow.classList.add('text-center');
+const divCol12 = document.createElement('div');
+divCol12.classList.add('col-12');
+mainContainerImgToFluid();
+divCol12.append(divManiContainer);
+divRow.append(divCol12);
+divContainer.append(divRow);
+body.append(divContainer);
+
+function mainContainerImgToFluid() {
+  const imgToFLuid = divManiContainer.querySelectorAll('img');
+  imgToFLuid.forEach(val => {
+    val.classList.add('img-fluid');
+  })
+}

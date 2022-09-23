@@ -1,18 +1,18 @@
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-}
+} */
 .containerJS {
   display: flex;
   align-items: center;
   align-content: space-between;
   flex-wrap: wrap;
-  width: 1280px;
-  height: 720px;
+  /* width: 1280px;
+  height: 720px; */
   border: 3px solid darkblue;
 }
 .moveObject {
@@ -32,20 +32,9 @@ body {
   width: 100%;
   justify-content: center;
 }
-.linkdiv {
-  width: 100px;
-  height: 20px;
-  margin: 5px;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-}
-.maincontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
 img {
   margin-top: 100px;
 }
